@@ -1,0 +1,63 @@
+.Article {
+  margin: 4rem 6rem;
+}
+.Article h1{
+  font-size: 3rem;
+}
+
+.frist-project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.frist-project-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.project-text {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+
+.image {
+  position: relative;
+  width: 50%;
+  display: flex;
+}
+.image img {
+  width: 49%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.image img:nth-child(2) {
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+
+@media screen and (max-width: 850px){
+  .Article {
+    margin: 4rem 2rem;
+  }
+  .frist-project, .frist-project-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.5rem;
+  }
+  .project-text {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+  .image img {
+    height: 250px;
+  }
+}
